@@ -1,0 +1,28 @@
+
+body
+{
+	font-family: tahoma, sans-serif;
+	font-size: 12px;
+}
+
+#progress {
+	height: 15px;
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    min-width: 200px;
+	margin-left: -100px;
+	background-color: #EFEFEF;
+	padding: 8px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#log {
+	padding: 10px;
+	border-radius: 5px;
+	height: 450px;
+	overflow-y: scroll;
+	background-color: #EFEFEF;
+	word-wrap:break-word;
+}

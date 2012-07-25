@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="chromo.css"></link>
+	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+
+
+    function log(s) {
+      $('#log').html( $('#log').html() + '<br/>' + s );
+    }
+
+    function logScroll() {
+      d = document.getElementById('log');
+      d.scrollTop = d.scrollHeight;
+    }
+
+    function writeElement(s, sId) {
+    $(sId).html(s);
+    $(sId).toggle(s != "");
+    }
+
+    $(document).ready(function() {
+    $('#progress').hide();
+    });
+
+
+  </script>
+</head>
+<body>
+  <div>
+ <!-- <h3>
+    Chromothripsis: &nbsp; <a href="." onclick="window.external.ChromothripsisTest(); return false;">4q</a> &nbsp;
+    <a href="." onclick="window.external.ChromothripsisNull(); return false;">4q Null</a>
+  </h3>
+  <p>
+    <a href="." onclick="window.external.CreateNullModel(); return false;">Nullmodell erzeugen</a>
+    |
+    <a href="." onclick="window.external.TestHmmscan(); return false;">Hmmscan Benchmark</a>
+    |
+  
+    <a href="." onclick="window.external.TestChr4Fac(); return false;">Konvertiertes Chr4 testen</a>
+  |
+    <a href="." onclick="window.external.TestSequencer(); return false;">Sequencer testen</a>
+    |
+   
+  <a href="." onclick="if (confirm('This will take a while.')) window.external.SqliteSynteny(); return false;">Ensembl Synteny CSVs to SQLite</a>
+-->
+  <!--
+  <br/>
+  <br/>
+<p><a href="." onclick="window.external.ConvertFasta(); return false;">FASTA konvertieren</a></p>
+
+
+
+  <p>
+    <a href="." onclick="window.external.TestPfam(); return false;">PFam testen</a>
+  </p>
+
+-->
+|
+  <!--  <a href="." onclick="if (confirm('This will take a while.')) window.external.SqliteEnsembl(); return false;">Ensembl Annotation CSVs to SQLite</a>
+ <p>
+    <a href="." onclick="window.external.SqliteChromosome(); return false;">Chromosome Annotation CSV to SQLite</a>
+  </p>
+
+|
+    <a href="." onclick="if (confirm('This will take a while. You will also have to re-create the Null Model.')) window.external.ConvertEnsembl(); return false;">Ensembl Tables to Chromophobia Tables</a>
+  </p>
+-->
+
+  <div id="log">
+</div>
+  </div>
+  <div id="progress">
+    -progress-
+  </div>
+</body>
+</html>
